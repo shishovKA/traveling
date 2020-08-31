@@ -10,4 +10,4 @@
 до 425 пикселей (мобильные устройства).
 
 ### Ссылка на страницу:
-[Сайт - Путешествия по России](https://shishovka.github.io/learn_to_learn/)
+[Сайт - Путешествия по России](https://shishovka.github.io/traveling/)
