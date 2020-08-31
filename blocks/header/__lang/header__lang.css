@@ -1,0 +1,24 @@
+.header__lang {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 23px;
+    text-align: right;
+    color: #ffffff;
+    margin: 17px 0px 12px 18px;
+    text-decoration: none;
+}
+
+.header__lang:first-child {
+    margin-left: 0px;
+}
+
+@media screen and (max-width: 375px) {
+  
+    .header__lang {
+        font-size: 18px;
+        line-height: 17px;
+        margin: 16px 0px 8px 16px;
+    }
+}
+

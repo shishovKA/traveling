@@ -1,0 +1,27 @@
+.intro__title {
+    padding-bottom: 48px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 59px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .intro__title {
+        font-size: calc(54px - (768px - 100vw)*22/(768 - 375));
+        line-height: calc(59px - (768px - 100vw)*24/(768 - 375));
+        padding-bottom: calc(48px - (768px - 100vw)*16/(768 - 375));
+    }   
+}
+
+
+@media screen and (max-width: 375px) {
+    .intro__title {
+        font-size: 32px;
+        line-height: 35px;
+        padding-bottom: 32px;
+    }   
+}

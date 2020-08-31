@@ -1,0 +1,32 @@
+.intro__text-list {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    width: 100%;
+    max-width: 383px;
+
+    font-size: 13px;
+    line-height: 20px;
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .intro__text-list {
+        font-size: calc(13px - (768px - 100vw)*1/(768 - 375));
+        line-height: calc(20px - (768px - 100vw)*1/(768 - 375));
+    }   
+}
+
+
+@media screen and (max-width: 375px) {
+    .intro__text-list {
+        font-size: 12px;
+        line-height: 19px;
+    }   
+}
+
+
+

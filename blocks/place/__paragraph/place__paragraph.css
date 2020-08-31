@@ -1,0 +1,30 @@
+.place__paragraph {
+    margin: 0px;
+    margin-bottom: 36px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.place__paragraph:last-child {
+    margin: 0px 0px 0px 0px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .place__paragraph {
+        font-size: calc(18px - (1024px - 100vw)*(18 - 16)/(1024 - 768));
+        line-height: calc(30px - (1024px - 100vw)*(30 - 27)/(1024 - 768));
+        margin-bottom: 24px;
+    }   
+}
+
+@media screen and (max-width: 768px){
+    .place__paragraph {
+        font-size: 16px;
+        line-height: 27px;
+        margin-bottom: 24px;
+    }   
+}

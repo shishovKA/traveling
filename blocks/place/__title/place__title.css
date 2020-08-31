@@ -1,0 +1,40 @@
+.place__title {
+    margin: 0px 0px 60px 0px;
+    width: 47.3%;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 65px;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .place__title {
+        font-size: calc(72px - (1024px - 100vw)*(72 - 42)/(1024 - 768));
+        line-height: calc(65px - (1024px - 100vw)*(65 - 46)/(1024 - 768));
+        margin-bottom: 40px;
+    }   
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px){
+    .place__title {
+        font-size: calc(42px - (768px - 100vw)*(42 - 32)/(768 - 375));
+        line-height: calc(46px - (768px - 100vw)*(46 - 35)/(768 - 375));
+        margin-bottom: 40px;
+    }   
+}
+
+@media screen and (max-width: 600px) {
+    .place__title {
+        width: calc(100% - 16px*2);
+        max-width: 375px;
+    }   
+}
+
+@media screen and (max-width: 375px) {
+    .place__title {
+        margin-bottom: 32px;
+        font-size: 32px;
+        line-height: 35px;
+    }   
+}

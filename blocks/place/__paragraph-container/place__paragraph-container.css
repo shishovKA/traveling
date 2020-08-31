@@ -1,0 +1,24 @@
+.place__paragraph-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 49.1%;
+}
+
+@media screen and (max-width: 600px) {
+    .place__paragraph-container {
+        width: calc(100% - 16px*2);
+        max-width: 375px;
+    }   
+}
+
+/*
+@media screen and (max-width: 375px) {
+    .place__paragraph-container {
+        width: calc(100% - 16px*2);
+        margin-right: 16px;
+        margin-left: 16px;
+    }   
+}
+
+

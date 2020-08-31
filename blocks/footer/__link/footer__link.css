@@ -1,0 +1,31 @@
+.footer__link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .footer__link {
+        font-size: calc(24px - (1024px - 100vw)*(24 - 16)/(1024 - 768));
+        line-height: calc(24px - (1024px - 100vw)*(24 - 16)/(1024 - 768));
+    }   
+}
+
+@media screen and (max-width: 768px) {
+    .footer__link {
+        font-size: 16px;
+        line-height: 16px;
+    }   
+}
+
+@media screen and (max-width: 720px) {
+    .footer__link {
+        font-size: 24px;
+        line-height: 24px;
+    }   
+}

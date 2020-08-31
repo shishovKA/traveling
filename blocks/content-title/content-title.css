@@ -1,0 +1,41 @@
+
+.content-title {
+    margin: 0px;
+    margin-bottom: 48px;
+    width: 100%;
+    max-width: 800px;
+
+    font-style: normal;
+    text-align: center;
+    color: #ffffff;
+
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 78px;
+ 
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .content-title {
+        font-size: calc(72px - (1024px - 100vw)*(72 - 42)/(1024 - 768));
+        line-height: calc(78px - (1024px - 100vw)*(78 - 46)/(1024 - 768));
+        margin-bottom: 24px;
+    }   
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .content-title {
+        font-size: calc(42px - (768px - 100vw)*(42 - 32)/(768 - 375));
+        line-height: calc(46px - (768px - 100vw)*(46 - 35)/(768 - 375));
+        margin-bottom: 24px;
+    }   
+}
+
+
+@media screen and (max-width: 375px) {
+    .content-title {
+        font-size: 32px;
+        line-height: 35px;
+        margin-bottom: 16px;
+    }   
+}

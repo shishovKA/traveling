@@ -1,0 +1,23 @@
+.video__text-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .video__text-container {
+        left: 24px;
+        bottom: 24px
+    }   
+}
+
+
+@media screen and (max-width: 375px) {
+    .video__text-container {
+        left: 16px;
+        bottom: 16px
+    }   
+}

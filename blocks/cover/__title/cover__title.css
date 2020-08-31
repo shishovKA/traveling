@@ -1,0 +1,43 @@
+.cover__title {
+    margin: 0px;
+    width: 85%;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 78px;
+    text-align: center;
+    color: #FFFDFD;
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 2;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .cover__title {
+        font-size: calc(72px - (768px - 100vw)*(72 - 32)/(768 - 375));
+        line-height: calc(78px - (768px - 100vw)*(78 - 35)/(768 - 375));
+    }   
+}
+
+@media screen and (max-width: 375px) {
+    .cover__title {
+        font-size: 32px;
+        line-height: 35px;
+        width: calc(100% - 16px*2);
+    }   
+}
+
+/*
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .content-title {
+        font-size: calc(72px - (1024px - 100vw)*(72 - 42)/(1024 - 768));
+        line-height: calc(78px - (1024px - 100vw)*(78 - 46)/(1024 - 768));
+        margin-bottom: 24px;
+    }   
+}
+
+
+
+
